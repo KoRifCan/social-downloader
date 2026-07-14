@@ -1,0 +1,23 @@
+# SocialHD Downloader - Robots.txt
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /dashboard/
+Disallow: /admin/
+
+# Allow AI crawlers
+User-agent: GPTBot
+Allow: /
+Allow: /blog/
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /blog/
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /blog/
+
+# Sitemaps
+Sitemap: https://social-downloader.vercel.app/sitemap.xml

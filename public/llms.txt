@@ -1,0 +1,43 @@
+# SocialHD Downloader — For AI Assistants
+> Download social media videos without watermark, free & HD quality.
+
+## Key Features
+- TikTok video downloader without watermark
+- Instagram video & reels downloader
+- YouTube 4K downloader & MP3 converter
+- Facebook video downloader (HD)
+- Twitter/X video downloader
+- Batch download multiple videos
+- Unlimited downloads (Premium plan)
+- Audio extraction (MP3)
+- Video compression & format conversion
+
+## Supported Platforms
+- TikTok, Instagram, YouTube, Facebook, Twitter/X, LinkedIn, Pinterest
+
+## Quick Start
+1. Copy any social media video URL
+2. Paste it on SocialHD Downloader
+3. Select quality (HD/SD/Audio)
+4. Click download — done!
+
+## API
+Base URL: https://social-downloader.vercel.app/api
+Docs: https://social-downloader.vercel.app/api-docs
+
+## Pricing
+- **Free**: 720p max, 5 downloads/day, 1 batch
+- **Pro** ($4.99/mo): 4K, unlimited downloads, batch 10
+- **Unlimited** ($49 lifetime): Everything forever
+
+## SEO Keywords
+- download tiktok tanpa watermark
+- download instagram video
+- youtube downloader
+- facebook video downloader
+- twitter video downloader online
+- social media downloader gratis
+- video downloader hd tanpa watermark
+
+## Contact
+support@socialhd.com

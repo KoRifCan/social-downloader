@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 255 255 255;
+    --foreground: 10 10 26;
+  }
+  .dark {
+    --background: 10 10 26;
+    --foreground: 255 255 255;
+  }
+  body {
+    @apply bg-gradient-premium text-white antialiased min-h-screen;
+  }
+  * {
+    @apply border-white/10;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-2xl border border-white/10 shadow-xl;
+  }
+  .glass-hover {
+    @apply hover:bg-white/10 transition-all duration-300;
+  }
+  .gradient-text {
+    @apply bg-gradient-accent bg-clip-text text-transparent;
+  }
+  .gradient-border {
+    @apply relative;
+  }
+  .gradient-border::before {
+    content: '';
+    @apply absolute -inset-[1px] bg-gradient-accent rounded-xl -z-10 opacity-50;
+  }
+  .glow {
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.3), 0 0 60px rgba(59, 130, 246, 0.1);
+  }
+  .glow-sm {
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.2);
+  }
+  .input-glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/20 rounded-xl px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500/30 transition-all duration-300;
+  }
+  .card-hover {
+    @apply hover:bg-white/[0.08] hover:scale-[1.02] transition-all duration-300 cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .bg-dot-pattern {
+    background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton {
+  @apply bg-white/10 rounded-lg relative overflow-hidden;
+}
+.skeleton::after {
+  content: '';
+  @apply absolute inset-0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
